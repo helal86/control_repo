@@ -1,8 +1,7 @@
 node default {
   file {'/root/README':
   ensure   => file,
-  content  => $fqdn,
-  owner    => 'root',
+  content  => "Welcome to $(fqdn)\n",
   }
 }
 
